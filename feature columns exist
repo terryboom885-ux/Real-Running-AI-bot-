@@ -1,0 +1,4 @@
+feature_cols = [col for col in df.columns if col not in ['home_team','away_team','market']]
+if not feature_cols:
+    st.error("No feature columns found. Check the odds data structure.")
+    return
